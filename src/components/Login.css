@@ -1,0 +1,77 @@
+/* login.css */
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.login-container h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.login-container .form-group {
+    margin-bottom: 15px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-container label {
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.login-container input::placeholder {
+    color: #aaa; /* Placeholder text color */
+}
+
+.login-container button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 4px;
+}
+
+.login-container button:hover {
+    opacity: 0.8;
+}
+
+.login-container .error {
+    color: red;
+    font-size: 12px;
+}
+
+.login-container .register-link {
+    text-align: center;
+    margin-top: 10px;
+    color: #007bff;
+    cursor: pointer;
+}
+
+.login-container .button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}

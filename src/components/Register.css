@@ -1,0 +1,78 @@
+.register-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 800px; /* Adjust max-width as per your design */
+    margin: auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.register-container h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.register-container .form-group {
+    margin-bottom: 15px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.register-container label {
+    font-weight: bold;
+    margin-bottom: 6px;
+    width: auto; /* Set width to auto to adjust dynamically */
+    max-width: 100%; /* Ensure label doesn't exceed container width */
+}
+
+.register-container input[type="text"],
+.register-container input[type="password"],
+.register-container input[type="email"] {
+    width: 700px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.register-container input::placeholder {
+    color: #aaa; /* Placeholder text color */
+}
+
+.register-container button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 4px;
+}
+
+.register-container button:hover {
+    opacity: 0.8;
+}
+
+.register-container .error {
+    color: red;
+    font-size: 12px;
+}
+
+.register-container .register-link {
+    text-align: center;
+    margin-top: 10px;
+    color: #007bff;
+    cursor: pointer;
+}
+
+.register-container .button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}

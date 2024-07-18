@@ -1,0 +1,75 @@
+/* Order.css */
+
+.order-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 800px; /* Adjust max-width as per your design */
+    margin: auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.order-container h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.order-container .form-group {
+    margin-bottom: 15px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.order-container label {
+    font-weight: bold;
+    margin-bottom: 6px;
+    width: auto; /* Set width to auto to adjust dynamically */
+    max-width: 100%; /* Ensure label doesn't exceed container width */
+}
+
+.order-container input[type="text"],
+.order-container input[type="password"],
+.order-container input[type="email"],
+.order-container input[type="number"],
+.order-container input[type="date"] {
+    width: 700px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.order-container input::placeholder {
+    color: #aaa; /* Placeholder text color */
+}
+
+.order-container button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 4px;
+}
+
+.order-container button:hover {
+    opacity: 0.8;
+}
+
+.order-container .error {
+    color: red;
+    font-size: 12px;
+}
+
+.order-container .button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}

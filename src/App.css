@@ -1,38 +1,298 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
 .App {
   text-align: center;
+  font-family: Arial, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+header {
+  top: auto;
+  background-color: #007bff;
+  padding: 20px;
+  color: white;
+  text-align: center;
+  margin: 20px 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+h1 {
+  color: #333;
+}
+
+h2 {
+  color: #555;
+}
+
+.Home {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  min-width: 100vh;
+  padding: 20px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+}
+
+p {
+  font-size: 20px;
+  color: black;
+}
+
+nav {
+  background: black;
+  color: white;
+  padding: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-link { 
+  cursor: pointer;
+  color: white;
+  text-decoration: underline;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.nav-link:hover {
+  color: #0000ff;
+}
+
+.ProjectDetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  min-width: 100vh;
+  padding: 20px;
+  color: #333;
+  margin: 0 auto;
+}
+
+.ProjectDetails h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.ProjectDetails h3 {
+  font-size: 1.5em;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.ProjectDetails p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.ProjectDetails ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.ProjectDetails ul li {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.ProjectDetails a {
+  color: #1e90ff;
+  text-decoration: none;
+}
+
+button {
+  width: 100%;
+  height: auto;
+  padding: 10px 20px;
+  background-color: rgb(58, 58, 221);
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 16px;
+  border-radius: 4px;
+  padding-bottom: 16px;
+}
+
+main {
+  padding: 20px;
+}
+
+.container {
+  padding: 16px;
+  max-width: 300px; /* Adjust max-width as per your design */
+  margin: auto; /* Center the form horizontally */
+  border: 3px solid #f1f1f1;
+  background-color: #ffffff;
+  border-radius: 8px;
+}
+
+.container label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.container input[type="text"],
+.container input[type="password"] {
+  width: calc(100% - 24px); /* Adjust width to fit within the container */
+  padding: 12px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+  height: fit-content;
+}
+
+.container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  color: black;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.container button {
+  background-color: #04AA6D;
   color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 4px;
 }
 
-.App-link {
-  color: #61dafb;
+.container button:hover {
+  opacity: 0.8;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.form-group {
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+}
+
+.form-container {
+  max-width: 300px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.register-link {
+  text-align: center;
+  margin-top: 10px;
+  color: #007bff;
+  cursor: pointer;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 300px) {
+  .container button {
+    width: 100%;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+.water-info {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.confirm-payment-container {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.confirm-payment-container h2 {
+  text-align: center;
+  margin-bottom:30px;
+}
+
+.order-details-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.order-details-table th,
+.order-details-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.order-details-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 300px) {
+  .button-container {
+    flex-direction: column;
   }
 }
